@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="68FF157B-6D1D-0A07-DF4A-19EBA59F3F58" name="S16_Proj_Emps">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:16:11 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="proj_emp_id" id="3C4115C7-495A-76E0-F81D-9E90EEB23A33">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:16:32 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project_no" id="085E38EB-6212-92DC-B472-251C4BD8C27F">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:17:42 UTC</createdTime>
+<generatorID>CBF5EB82-8A28-2267-380C-3BC3479A9A87</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+</engineerTo>
+<referedAttribute>5C371376-BF3B-5161-3E60-3998C1B3BFE4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id" id="77F5A4CD-974E-4D81-63F7-2BAC6999B015">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:18:14 UTC</createdTime>
+<generatorID>C9E71FA2-21AA-6792-D113-B9C3289B2FC2</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+</engineerTo>
+<referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

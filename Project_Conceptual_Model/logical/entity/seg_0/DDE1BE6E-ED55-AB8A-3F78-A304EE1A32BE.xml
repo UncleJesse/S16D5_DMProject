@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDE1BE6E-ED55-AB8A-3F78-A304EE1A32BE" name="S16_Previous_Project">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:36:26 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>54040635-4205-34B2-36EC-2F260C854DA2</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="end_date" id="13D9E5D5-8149-35EE-E4E6-730FE2773707">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:36:49 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="est_person_hours" id="1C0EC4BC-86BF-9C60-E2D7-ECBEABBDF20F">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:38:22 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

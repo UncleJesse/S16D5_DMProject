@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B0EC79C-07BF-A73E-066B-5AA45A07C342" name="S16_History">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>DB022641-F654-97D6-340C-2F2D02E71AFE</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="history_id" id="EEA11DA9-0E90-F8A6-6FC3-8ECF8D0F4F2B">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>AA4E0F7B-2B22-81B1-40CB-43B95A30C7AA</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proposal_date" id="3EA1AB7F-A0E8-CC62-D02B-B94A80E44CE3">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>57BB030B-D517-0ABC-BEC2-97EA15F2021D</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="approval_date" id="2A45251C-5B40-2820-CD2B-DBA76A0CA61F">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>03AD2BC7-EC8E-C789-6354-7538106EE30B</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="6A6FE7D8-BA1D-4270-E3CA-EF64825D57F6">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>B54BEDD6-4E52-FC07-00F5-041DE71F378A</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="AD768789-B83D-14A8-1875-AF80CE1239D1">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>35AC5BA1-6BF7-A108-D8A9-3D3D728DF4D5</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="3ABDD86A-6D80-F624-703A-842BF0F58CB5">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>9C2EED23-18B1-20B7-C800-42060B92BAFD</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S16_Project_project_no" id="4E3341F5-CBDB-1AB7-52BE-C2E8A33F7AF8">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>A640AA40-CCCF-9583-95C8-CCA310D0C5B6</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91D572B5-CCA4-DFED-40A9-5B5BA0035206" referredColumn="8EE7E44D-3D39-BAF1-BBAF-A4DE74978153"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D6BA637-35F6-7024-63BE-AA11E041CBD1" name="S16_History_PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>11327F50-DA99-C942-132A-A1F9507886BA</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEA11DA9-0E90-F8A6-6FC3-8ECF8D0F4F2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8374FB48-52AD-DCFF-9043-ECA568EBBD6B" name="S16_History__IDX">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8A8212C6-7E54-C29D-EB2B-FCDD5E442B41</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4E3341F5-CBDB-1AB7-52BE-C2E8A33F7AF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A72D45AB-21C2-DF0E-1461-1BB85F061F5D" name="S16_History_S16_Project_FK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:55:03 UTC</createdTime>
+<generatorID>8A8212C6-7E54-C29D-EB2B-FCDD5E442B41</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E3341F5-CBDB-1AB7-52BE-C2E8A33F7AF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4299C12-395E-5E4A-C34D-5888FF2C0C47" name="S16_Department">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 02:58:00 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="dept_no" id="9531DB33-3B6D-3852-E017-F4B2F0018A3F">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 02:58:11 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept_name" id="9C3E006E-B646-7809-29B9-5C5312583560">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 02:59:11 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6529397A-DDCE-19AB-5EEC-09B887C31209" name="S16_Department PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 02:58:32 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9531DB33-3B6D-3852-E017-F4B2F0018A3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

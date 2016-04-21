@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54040635-4205-34B2-36EC-2F260C854DA2" name="S16_Project">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:33:25 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="project_no" id="9AA49C30-3DB0-B6B8-1E21-B819BE05A589">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:33:40 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project_title" id="9E5AE6E9-AE43-9A60-2513-CC0647C6B421">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:33:57 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id" id="81709DED-C95A-D562-64EE-7EF884E83ED7">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:10:43 UTC</createdTime>
+<generatorID>F8F1B0FA-CCF0-0DD9-CD0D-E40E76078A67</generatorID>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<referedAttribute>D7F24533-D71E-7C81-5641-B1B6C25B38FE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project_no1" id="AAF443EA-1799-AA30-6714-ABE465C6A5A3">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:14:56 UTC</createdTime>
+<generatorID>4F86F3D2-1A91-2E5A-5646-11E280808A06</generatorID>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9AA49C30-3DB0-B6B8-1E21-B819BE05A589</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept_no" id="E7933F9A-4BE2-B1ED-0DAA-1C367E12CD2A">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:18:56 UTC</createdTime>
+<generatorID>3E400E6A-F04D-06C0-C86A-B6060FD02066</generatorID>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<referedAttribute>F441DFCE-38CA-6B9C-CB1B-BD917522B40E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D32666C-8291-F5A4-232F-EC457BBCEA97" name="S16_Project PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:33:55 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9AA49C30-3DB0-B6B8-1E21-B819BE05A589</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

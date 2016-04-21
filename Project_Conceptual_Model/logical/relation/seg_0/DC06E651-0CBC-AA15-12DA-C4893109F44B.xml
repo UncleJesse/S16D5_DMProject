@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="S16_Children" directorySegmentName="seg_0" id="DC06E651-0CBC-AA15-12DA-C4893109F44B">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 22:46:08 UTC</createdTime>
+<ownerDesignName>Project_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="B083BAB8-EAA4-D9BD-EBBE-5DBB86FE72ED" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3FFFE160-6CDB-FB99-4735-7B9B0D935F74</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3FFFE160-6CDB-FB99-4735-7B9B0D935F74</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

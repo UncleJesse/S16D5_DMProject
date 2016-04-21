@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14CAAD3B-F067-D1E2-9942-19786D294931" name="S16_Person">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="person_id" id="5080417C-A62A-9350-5478-7DDB4BD6F0F5">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<importedID>D7F24533-D71E-7C81-5641-B1B6C25B38FE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="97CD27EA-B39E-60C0-937F-8C65503467FB">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<importedID>7B1A576C-B49A-0C3E-8936-3BC3E8B5C9E1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="CA908265-6665-A7F3-C13B-9973524986F3">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<importedID>CA9B7B7B-6886-1D17-0D52-793E7CA9EEBD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="home_address" id="8E99D946-B369-A53F-C855-671353958FF4">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<importedID>C878C7BD-A7EB-501D-3110-B7F1A082FECB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zipcode" id="7ABCB0BA-2260-0CB0-8B90-D61FC7C8C953">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<importedID>DED76DE7-3802-1190-D99A-E0A8F920940D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="home_phone" id="60BF3A9E-679D-4C4F-6333-A9F0426DA6C7">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<importedID>ECC51AE7-A90A-AC53-7286-F33409164C45</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="us_citizen" id="BAFFB21F-7B2D-26CE-D70E-AA1F810CBD14">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<importedID>422E2F08-4F34-C35B-0152-60FF70108320</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="D0EB5E15-8FC9-2730-F87F-85CFB33968F9">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:47:22 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary" id="1D810184-A3D0-AEA2-11D1-32756EBCE039">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:47:50 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary_exception" id="CE3DFEF8-A7A8-4357-7475-D43926D1AFBB">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:48:04 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="E6E3BCCE-7708-BB31-25F6-106B2E1A6F62">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:52:29 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id1" id="7CE5A072-0564-57F8-25F6-1B4A42EB2CE6">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:55:27 UTC</createdTime>
+<generatorID>D72A1707-783E-0752-EC26-79D7CDF0B37B</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id2" id="9DD0ED8F-72AB-D50C-C292-E229A3826713">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:59:41 UTC</createdTime>
+<generatorID>5E07502B-1AEA-E35F-BB60-89F3A8D84E6C</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="is_fired" id="4FA953BC-B018-9932-7EB9-667671D174A7">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 02:52:42 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bonus" id="3C0A23A8-9DBE-EBF8-2B95-DF6C5C0F05B6">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 02:53:42 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dept_no" id="6081EFEC-FB51-B90D-CFEC-F29710911A53">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 03:00:03 UTC</createdTime>
+<generatorID>1DD48A7A-F9B5-1705-3C95-6905C8AABD36</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<referedAttribute>9531DB33-3B6D-3852-E017-F4B2F0018A3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="477DAABC-EFDE-4CAC-AE46-A7EC906B4CBD" name="S16_Person PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-28 23:45:24 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5080417C-A62A-9350-5478-7DDB4BD6F0F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

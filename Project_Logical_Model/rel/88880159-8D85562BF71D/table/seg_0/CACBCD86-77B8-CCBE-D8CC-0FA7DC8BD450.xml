@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CACBCD86-77B8-CCBE-D8CC-0FA7DC8BD450" name="S16_Par_Chil">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:35:27 UTC</createdTime>
+<generatorID>038417A7-1660-8A94-DFAF-23BA3E74CC2A</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="parents_children_id" id="2C11DC86-DD52-224B-9FA8-6CF89BFBAFCF">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:35:27 UTC</createdTime>
+<generatorID>AFF984B2-C47A-11DF-A4AE-CB216DEED432</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S16_Person_person_id1" id="B3535D85-68B6-3235-8EC0-CCA81A538759">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:35:27 UTC</createdTime>
+<generatorID>86B8355B-2B9D-3C7D-15D3-E054050099A7</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E881A0FE-FF46-B01F-A5B6-2B47E962168C" referredColumn="66811F8C-3BE8-3F1F-A2D7-56195B21F53D"/>
+</associations>
+</Column>
+<Column name="S16_Person_person_id" id="DF12AE3E-89AC-CB07-2939-182980A49ED0">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:35:27 UTC</createdTime>
+<generatorID>47698B22-1EB6-41E9-1B2C-37B96EA94D4B</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F0AD962-8FA9-1E61-E5E0-466250D53E5F" referredColumn="66811F8C-3BE8-3F1F-A2D7-56195B21F53D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61CE07C5-AF1F-C857-69B0-66C7E9B18260" name="S16_Par_Chil_PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:35:27 UTC</createdTime>
+<generatorID>0D9CDA7B-F478-2A38-EB3F-A9BB67C8A3D1</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C11DC86-DD52-224B-9FA8-6CF89BFBAFCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FEBB43E-E9C5-CE76-862C-F783FB55D83C" name="S16_Par_Chil_S16_Person_FK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:35:27 UTC</createdTime>
+<generatorID>E54DEA33-3965-9289-6B10-2412C12DD8FE</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF12AE3E-89AC-CB07-2939-182980A49ED0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF610851-E835-1F9E-E61F-02F8B94B3B58" name="S16_Par_Chil_S16_Person_FKv1">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-03-30 20:35:27 UTC</createdTime>
+<generatorID>E8E2000B-CE18-6B7B-0AD1-B090B76BB612</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3535D85-68B6-3235-8EC0-CCA81A538759"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

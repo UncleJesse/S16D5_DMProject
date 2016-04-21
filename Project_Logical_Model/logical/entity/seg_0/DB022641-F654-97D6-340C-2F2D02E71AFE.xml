@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB022641-F654-97D6-340C-2F2D02E71AFE" name="S16_History">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:48:02 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="history_id" id="AA4E0F7B-2B22-81B1-40CB-43B95A30C7AA">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:48:10 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="proposal_date" id="57BB030B-D517-0ABC-BEC2-97EA15F2021D">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:48:23 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="approval_date" id="03AD2BC7-EC8E-C789-6354-7538106EE30B">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:48:38 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="start_date" id="B54BEDD6-4E52-FC07-00F5-041DE71F378A">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:50:06 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end_date" id="35AC5BA1-6BF7-A108-D8A9-3D3D728DF4D5">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:50:46 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="9C2EED23-18B1-20B7-C800-42060B92BAFD">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:51:04 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project_no" id="A640AA40-CCCF-9583-95C8-CCA310D0C5B6">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:51:58 UTC</createdTime>
+<generatorID>8A8212C6-7E54-C29D-EB2B-FCDD5E442B41</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<referedAttribute>5C371376-BF3B-5161-3E60-3998C1B3BFE4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="11327F50-DA99-C942-132A-A1F9507886BA" name="S16_History PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-20 22:48:20 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AA4E0F7B-2B22-81B1-40CB-43B95A30C7AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
