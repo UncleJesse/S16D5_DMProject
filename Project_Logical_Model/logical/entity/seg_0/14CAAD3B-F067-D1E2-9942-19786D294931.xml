@@ -3,6 +3,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -17,6 +20,9 @@
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <importedID>D7F24533-D71E-7C81-5641-B1B6C25B38FE</importedID>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -27,6 +33,9 @@
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <importedID>7B1A576C-B49A-0C3E-8936-3BC3E8B5C9E1</importedID>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -38,6 +47,9 @@
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <importedID>CA9B7B7B-6886-1D17-0D52-793E7CA9EEBD</importedID>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -49,6 +61,9 @@
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <importedID>C878C7BD-A7EB-501D-3110-B7F1A082FECB</importedID>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,6 +76,9 @@
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <importedID>DED76DE7-3802-1190-D99A-E0A8F920940D</importedID>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,6 +90,9 @@
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <importedID>ECC51AE7-A90A-AC53-7286-F33409164C45</importedID>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -83,6 +104,9 @@
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <importedID>422E2F08-4F34-C35B-0152-60FF70108320</importedID>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -93,6 +117,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:47:22 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -102,6 +129,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:47:50 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -111,6 +141,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:48:04 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -122,6 +155,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:52:29 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -134,6 +170,9 @@
 <createdTime>2016-03-28 23:55:27 UTC</createdTime>
 <generatorID>D72A1707-783E-0752-EC26-79D7CDF0B37B</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -146,6 +185,9 @@
 <createdTime>2016-03-28 23:59:41 UTC</createdTime>
 <generatorID>5E07502B-1AEA-E35F-BB60-89F3A8D84E6C</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -157,6 +199,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-30 02:52:42 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -167,6 +212,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-30 02:53:42 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -178,6 +226,9 @@
 <createdTime>2016-03-30 03:00:03 UTC</createdTime>
 <generatorID>1DD48A7A-F9B5-1705-3C95-6905C8AABD36</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <referedAttribute>9531DB33-3B6D-3852-E017-F4B2F0018A3F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -190,6 +241,10 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:45:24 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>5080417C-A62A-9350-5478-7DDB4BD6F0F5</attributeRef>

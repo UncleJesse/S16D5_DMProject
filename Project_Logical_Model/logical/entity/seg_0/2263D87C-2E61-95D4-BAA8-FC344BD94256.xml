@@ -144,8 +144,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:47:07 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

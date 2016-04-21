@@ -13,8 +13,9 @@
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>3C4115C7-495A-76E0-F81D-9E90EEB23A33</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -50,6 +51,18 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21A05B58-3B4E-6BB2-2981-86C7FC87E3AF" name="S16_Proj_Emps_PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-21 17:59:18 UTC</createdTime>
+<generatorID>D06A9057-F788-BC25-E3FA-5791C862C91F</generatorID>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E33447E-C6EE-C761-7A47-647A6FF5BAA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="E910639A-BBE5-A356-ABEB-15C4F2697261" name="S16_Proj_Emps_S16_Person_FK">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>

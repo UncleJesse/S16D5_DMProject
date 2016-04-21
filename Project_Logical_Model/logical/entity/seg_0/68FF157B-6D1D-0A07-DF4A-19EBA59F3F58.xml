@@ -4,7 +4,7 @@
 <createdTime>2016-03-30 20:16:11 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,10 +20,11 @@
 <createdTime>2016-03-30 20:16:32 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="project_no" id="085E38EB-6212-92DC-B472-251C4BD8C27F">
@@ -32,7 +33,7 @@
 <generatorID>CBF5EB82-8A28-2267-380C-3BC3479A9A87</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <referedAttribute>5C371376-BF3B-5161-3E60-3998C1B3BFE4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,7 +47,7 @@
 <generatorID>C9E71FA2-21AA-6792-D113-B9C3289B2FC2</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,4 +56,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D06A9057-F788-BC25-E3FA-5791C862C91F" name="S16_Proj_Emps PK">
+<createdBy>Dirty Jesse</createdBy>
+<createdTime>2016-04-21 17:59:08 UTC</createdTime>
+<ownerDesignName>Project_Logical_Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C4115C7-495A-76E0-F81D-9E90EEB23A33</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

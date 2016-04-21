@@ -18,6 +18,7 @@ SELECT
 	home_phone,
 	us_citizen,
 	S16_Person_person_id,
+	S16_Person_person_id1,
 	is_fired,
 	salary
 FROM S16_Person where type = 'Previous Employee' ;
@@ -36,6 +37,7 @@ BEGIN
 	home_phone,
 	us_citizen,
 	S16_Person_person_id,
+	S16_Person_person_id1,
 	is_fired,
 	salary)
 	 VALUES (
@@ -48,6 +50,7 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.S16_Person_person_id,
+	:NEW.S16_Person_peson_id1,
 	:NEW.is_fired,
 	:NEW.salary) ;
 END;
@@ -64,10 +67,10 @@ SELECT
 	home_phone,
 	us_citizen,
 	S16_Person_person_id,
+	S16_Person_person_id1,
 	employee_id,
 	salary,
-	salary_exception,
-	S16_Person_person_id1
+	salary_exception	
 
 FROM S16_Person where type = 'Employee' ;
 
@@ -85,10 +88,10 @@ BEGIN
 	home_phone,
 	us_citizen,
 	S16_Person_person_id,
+	S16_Person_person_id1,
 	employee_id,
 	salary,
-	salary_exception,
-	S16_Person_person_id1)
+	salary_exception)
 	 VALUES (
 	:NEW.person_id,
 	'Employee',
@@ -99,10 +102,10 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.S16_Person_person_id,
+	:NEW.S16_Person_person_id1,
 	:NEW.employee_id,
 	:NEW.salary,
-	:NEW.salary_exception,
-	:NEW.S16_Person_person_id1) ;
+	:NEW.salary_exception) ;
 END;
 /
 
@@ -117,11 +120,11 @@ SELECT
 	home_phone,
 	us_citizen,
 	S16_Person_person_id,
+	S16_Person_person_id1,
 	employee_id,
 	salary,
-	salary_exception,
-	S16_Person_person_id1,
-	S16_Project_project_no1
+	salary_exception,	
+	S16_Project_project_no
 FROM S16_Person where type = 'Project Employee' ;
 
 create or replace TRIGGER S16_Project_Employee_trigger
@@ -137,12 +140,12 @@ BEGIN
 	zipcode,
 	home_phone,
 	us_citizen,
+	S16_Person_person_id,
 	S16_Person_person_id1,
 	employee_id,
 	salary,
 	salary_exception,
-	S16_Person_person_id,
-	S16_Project_project_no1)
+	S16_Project_project_no)
 	 VALUES (
 	:NEW.person_id,
 	'Project_Employee',
@@ -152,12 +155,12 @@ BEGIN
 	:NEW.zipcode,
 	:NEW.home_phone,
 	:NEW.us_citizen,
+	:NEW.S16_Person_person_id,
 	:NEW.S16_Person_person_id1,
 	:NEW.employee_id,
 	:NEW.salary,
-	:NEW.salary_exception,
-	:NEW.S16_Person_person_id,
-	:NEW.S16_Project_project_no1) ;
+	:NEW.salary_exception,	
+	:NEW.S16_Project_project_no) ;
 END;
 /
 
@@ -171,14 +174,12 @@ SELECT
 	zipcode,
 	home_phone,
 	us_citizen,
+	S16_Person_person_id,
 	S16_Person_person_id1,
 	employee_id,
 	salary,
 	salary_exception,
-	S16_Person_person_id,
 	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
 	S16_Department_dept_no
 FROM S16_Person where type = 'Manager' ;
 
@@ -195,33 +196,29 @@ BEGIN
 	zipcode,
 	home_phone,
 	us_citizen,
+	S16_Person_person_id,
 	S16_Person_person_id1,
 	employee_id,
 	salary,
 	salary_exception,
-	S16_Person_person_id,
 	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
 	S16_Department_dept_no)
 	 VALUES (
 	:NEW.person_id,
 	'Manager',
-	first_name,
-	last_name,
-	home_address,
-	zipcode,
-	home_phone,
-	us_citizen,
-	S16_Person_person_id1,
-	employee_id,
-	salary,
-	salary_exception,
-	S16_Person_person_id,
-	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
-	S16_Department_dept_no) ;
+	:NEW.first_name,
+	:NEW.last_name,
+	:NEW.home_address,
+	:NEW.zipcode,
+	:NEW.home_phone,
+	:NEW.us_citizen,
+	:NEW.S16_Person_person_id,
+	:NEW.S16_Person_person_id1,
+	:NEW.employee_id,
+	:NEW.salary,
+	:NEW.salary_exception,	
+	:NEW.bonus,
+	:NEW.S16_Department_dept_no) ;
 END;
 /
 
@@ -241,8 +238,6 @@ SELECT
 	salary_exception,
 	S16_Person_person_id,
 	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
 	S16_Department_dept_no
 FROM S16_Person where type = 'Interim Manager' ;
 
@@ -259,33 +254,29 @@ BEGIN
 	zipcode,
 	home_phone,
 	us_citizen,
+	S16_Person_person_id,
 	S16_Person_person_id1,
 	employee_id,
 	salary,
-	salary_exception,
-	S16_Person_person_id,
+	salary_exception,	
 	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
 	S16_Department_dept_no)
 	 VALUES (
 	:NEW.person_id,
 	'Interim_Manager',
-	first_name,
-	last_name,
-	home_address,
-	zipcode,
-	home_phone,
-	us_citizen,
-	S16_Person_person_id1,
-	employee_id,
-	salary,
-	salary_exception,
-	S16_Person_person_id,
-	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
-	S16_Department_dept_no) ;
+	:NEW.first_name,
+	:NEW.last_name,
+	:NEW.home_address,
+	:NEW.zipcode,
+	:NEW.home_phone,
+	:NEW.us_citizen,
+	:NEW.S16_Person_person_id1,
+	:NEW.employee_id,
+	:NEW.salary,
+	:NEW.salary_exception,
+	:NEW.S16_Person_person_id,
+	:NEW.bonus,
+	:NEW.S16_Department_dept_no) ;
 END;
 /
 
@@ -299,14 +290,12 @@ SELECT
 	zipcode,
 	home_phone,
 	us_citizen,
+	S16_Person_person_id,
 	S16_Person_person_id1,
 	employee_id,
 	salary,
 	salary_exception,
-	S16_Person_person_id,
 	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
 	S16_Department_dept_no
 FROM S16_Person where type = 'President' ;
 
@@ -323,33 +312,29 @@ BEGIN
 	zipcode,
 	home_phone,
 	us_citizen,
+	S16_Person_person_id,
 	S16_Person_person_id1,
 	employee_id,
 	salary,
 	salary_exception,
-	S16_Person_person_id,
 	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
 	S16_Department_dept_no)
 	 VALUES (
 	:NEW.person_id,
 	'President',
-	first_name,
-	last_name,
-	home_address,
-	zipcode,
-	home_phone,
-	us_citizen,
-	S16_Person_person_id1,
-	employee_id,
-	salary,
-	salary_exception,
-	S16_Person_person_id,
-	bonus,
-	S16_Person_person_id2,
-	S16_Project_project_no,
-	S16_Department_dept_no) ;
+	:NEW.first_name,
+	:NEW.last_name,
+	:NEW.home_address,
+	:NEW.zipcode,
+	:NEW.home_phone,
+	:NEW.us_citizen,
+	:NEW.S16_Person_person_id,
+	:NEW.S16_Person_person_id1,
+	:NEW.employee_id,
+	:NEW.salary,
+	:NEW.salary_exception,
+	:NEW.bonus,
+	:NEW.S16_Department_dept_no) ;
 END;
 /
 
@@ -358,13 +343,10 @@ SELECT
 	project_no,
 	type,
 	project_title,
-	S16_Person_person_id,
-	S16_Project_project_no1,
-	S16_Project_project_no,
-	S16_Department_dept_no,
 	project_active,
-	S16_Person_person_id1
-
+	S16_Person_person_id,
+	S16_Project_project_no,
+	S16_Department_dept_no
 FROM S16_Project where type = 'Current Project' ;
 
 create or replace TRIGGER S16_Current_Project_trigger
@@ -375,22 +357,18 @@ BEGIN
 	project_no,
 	type,
 	project_title,
-	S16_Person_person_id,
-	S16_Project_project_no1,
-	S16_Project_project_no,
-	S16_Department_dept_no,
 	project_active,
-	S16_Person_person_id1)
+	S16_Person_person_id,
+	S16_Project_project_no,
+	S16_Department_dept_no)
 	 VALUES (
 	:NEW.project_no,
 	'Current Project',
 	:NEW.project_title,
-	:NEW.S16_Person_person_id,
-	:NEW.S16_Project_project_no1,
-	:NEW.S16_Project_project_no2,
-	:NEW.S16_Department_dept_no,
 	:NEW.project_active,
-	:NEW.S16_Person_person_id1) ;
+	:NEW.S16_Person_person_id,
+	:NEW.S16_Project_project_no,
+	:NEW.S16_Department_dept_no) ;
 END;
 /
 
@@ -399,12 +377,11 @@ SELECT
 	project_no,
 	type,
 	project_title,
-	S16_Person_person_id,
-	S16_Project_project_no1,
-	S16_Project_project_no,
-	S16_Department_dept_no,
 	end_date,
-	est_person_hours
+	est_person_hours,
+	S16_Person_person_id,
+	S16_Project_project_no,
+	S16_Department_dept_no
 FROM S16_Project where type = 'Previous Project' ;
 
 create or replace TRIGGER S16_Previous_Project_trigger
@@ -415,21 +392,19 @@ BEGIN
 	project_no,
 	type,
 	project_title,
-	S16_Person_person_id,
-	S16_Project_project_no1,
-	S16_Project_project_no,
-	S16_Department_dept_no,
 	end_date,
-	est_person_hours)
+	est_person_hours,
+	S16_Person_person_id,
+	S16_Project_project_no,
+	S16_Department_dept_no)
 	 VALUES (
 	:NEW.project_no,
 	'Previous Project',
 	:NEW.project_title,
-	:NEW.S16_Person_person_id,
-	:NEW.S16_Project_project_no1,
-	:NEW.S16_Project_project_no,
-	:NEW.S16_Department_dept_no,
 	:NEW.end_date,
-	:NEW.est_person_hours) ;
+	:NEW.est_person_hours
+	:NEW.S16_Person_person_id,
+	:NEW.S16_Project_project_no,
+	:NEW.S16_Department_dept_no) ;
 END;
 /
