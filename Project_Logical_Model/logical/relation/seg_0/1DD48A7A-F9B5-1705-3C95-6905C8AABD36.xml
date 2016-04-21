@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="S16_Dept_Managers" directorySegmentName="seg_0" id="1DD48A7A-F9B5-1705-3C95-6905C8AABD36">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Proj_Dept_Managers" directorySegmentName="seg_0" id="1DD48A7A-F9B5-1705-3C95-6905C8AABD36">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-30 03:00:03 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <sourcePk>6529397A-DDCE-19AB-5EEC-09B887C31209</sourcePk>
 <identifying>false</identifying>

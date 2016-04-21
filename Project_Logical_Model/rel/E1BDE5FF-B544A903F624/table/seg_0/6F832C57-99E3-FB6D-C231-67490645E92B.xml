@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F832C57-99E3-FB6D-C231-67490645E92B" name="S16_Proj_Emps">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F832C57-99E3-FB6D-C231-67490645E92B" name="Proj_Proj_Emps">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>68FF157B-6D1D-0A07-DF4A-19EBA59F3F58</generatorID>
@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="S16_Project_project_no" id="BFD3789C-3733-5304-39AC-A3D6BBAED1C3">
+<Column name="Proj_Project_project_no" id="BFD3789C-3733-5304-39AC-A3D6BBAED1C3">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>085E38EB-6212-92DC-B472-251C4BD8C27F</generatorID>
@@ -34,7 +34,7 @@
 <colAssociation fkAssociation="9650AC18-AB59-5B94-32D6-6A78C204685E" referredColumn="8EE7E44D-3D39-BAF1-BBAF-A4DE74978153"/>
 </associations>
 </Column>
-<Column name="S16_Person_person_id" id="59C19ED7-51AF-49BC-97F1-16578D0D9057">
+<Column name="Proj_Person_person_id" id="59C19ED7-51AF-49BC-97F1-16578D0D9057">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>77F5A4CD-974E-4D81-63F7-2BAC6999B015</generatorID>
@@ -51,7 +51,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="21A05B58-3B4E-6BB2-2981-86C7FC87E3AF" name="S16_Proj_Emps_PK">
+<ind_PK_UK id="21A05B58-3B4E-6BB2-2981-86C7FC87E3AF" name="Proj_Proj_Emps_PK">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-04-21 17:59:18 UTC</createdTime>
 <generatorID>D06A9057-F788-BC25-E3FA-5791C862C91F</generatorID>
@@ -63,7 +63,7 @@
 <colUsage columnID="9E33447E-C6EE-C761-7A47-647A6FF5BAA2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E910639A-BBE5-A356-ABEB-15C4F2697261" name="S16_Proj_Emps_S16_Person_FK">
+<ind_PK_UK id="E910639A-BBE5-A356-ABEB-15C4F2697261" name="Proj_Proj_Emps_Proj_Person_FK">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>C9E71FA2-21AA-6792-D113-B9C3289B2FC2</generatorID>
@@ -74,7 +74,7 @@
 <colUsage columnID="59C19ED7-51AF-49BC-97F1-16578D0D9057"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1982B878-4667-E9C5-7161-CB9B141932D4" name="S16_Proj_Emps_S16_Project_FK">
+<ind_PK_UK id="1982B878-4667-E9C5-7161-CB9B141932D4" name="Proj_Proj_Emps_Proj_Project_FK">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>CBF5EB82-8A28-2267-380C-3BC3479A9A87</generatorID>

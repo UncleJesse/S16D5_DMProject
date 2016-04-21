@@ -1,8 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4299C12-395E-5E4A-C34D-5888FF2C0C47" name="S16_Department">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4299C12-395E-5E4A-C34D-5888FF2C0C47" name="Proj_Dept">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-30 02:58:00 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-30 02:58:11 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,6 +31,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-30 02:59:11 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,6 +46,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-30 02:58:32 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>9531DB33-3B6D-3852-E017-F4B2F0018A3F</attributeRef>

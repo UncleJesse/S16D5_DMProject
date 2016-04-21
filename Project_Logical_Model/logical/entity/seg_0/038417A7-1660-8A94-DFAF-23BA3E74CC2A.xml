@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="038417A7-1660-8A94-DFAF-23BA3E74CC2A" name="S16_Par_Chil">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="038417A7-1660-8A94-DFAF-23BA3E74CC2A" name="Proj_Par_Chil">
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:53:34 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2016-03-28 23:54:55 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <generatorID>E8E2000B-CE18-6B7B-0AD1-B090B76BB612</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,7 +47,7 @@
 <generatorID>E54DEA33-3965-9289-6B10-2412C12DD8FE</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="true"/>
 </engineerTo>
 <referedAttribute>5080417C-A62A-9350-5478-7DDB4BD6F0F5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -61,8 +61,9 @@
 <createdBy>Dirty Jesse</createdBy>
 <createdTime>2016-03-28 23:55:08 UTC</createdTime>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EB1883DB-E7A4-FBC6-E93C-BBE7559FC2FA" value="true"/>
+<item key="E1BDE5FF-C12A-0160-122F-B544A903F624" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

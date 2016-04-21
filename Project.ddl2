@@ -1,124 +1,124 @@
-DROP SEQUENCE S16_Department_seq ; 
-create sequence S16_Department_seq 
+DROP SEQUENCE Proj_Dept_seq ; 
+create sequence Proj_Dept_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER S16_Department_PK_trig 
+DROP TRIGGER Proj_Dept_PK_trig 
 ; 
 
-create or replace trigger S16_Department_PK_trig 
-before insert on S16_Department
+create or replace trigger Proj_Dept_PK_trig 
+before insert on Proj_Dept
 for each row 
 begin 
-select S16_Department_seq.nextval into :new.dept_no from dual; 
+select Proj_Dept_seq.nextval into :new.dept_no from dual; 
 end; 
 /
 
-DROP SEQUENCE S16_History_seq ; 
-create sequence S16_History_seq 
+DROP SEQUENCE Proj_History_seq ; 
+create sequence Proj_History_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER S16_History_PK_trig 
+DROP TRIGGER Proj_History_PK_trig 
 ; 
 
-create or replace trigger S16_History_PK_trig 
-before insert on S16_History
+create or replace trigger Proj_History_PK_trig 
+before insert on Proj_History
 for each row 
 begin 
-select S16_History_seq.nextval into :new.history_id from dual; 
+select Proj_History_seq.nextval into :new.history_id from dual; 
 end; 
 /
 
-DROP SEQUENCE S16_Par_Chil_seq ; 
-create sequence S16_Par_Chil_seq 
+DROP SEQUENCE Proj_Par_Chil_seq ; 
+create sequence Proj_Par_Chil_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER S16_Par_Chil_PK_trig 
+DROP TRIGGER Proj_Par_Chil_PK_trig 
 ; 
 
-create or replace trigger S16_Par_Chil_PK_trig 
-before insert on S16_Par_Chil
+create or replace trigger Proj_Par_Chil_PK_trig 
+before insert on Proj_Par_Chil
 for each row 
 begin 
-select S16_Par_Chil_seq.nextval into :new.parents_children_id from dual; 
+select Proj_Par_Chil_seq.nextval into :new.parents_children_id from dual; 
 end; 
 /
 
-DROP SEQUENCE S16_Person_seq ; 
-create sequence S16_Person_seq 
+DROP SEQUENCE Proj_Person_seq ; 
+create sequence Proj_Person_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER S16_Person_PK_trig 
+DROP TRIGGER Proj_Person_PK_trig 
 ; 
 
-create or replace trigger S16_Person_PK_trig 
-before insert on S16_Person
+create or replace trigger Proj_Person_PK_trig 
+before insert on Proj_Person
 for each row 
 begin 
-select S16_Person_seq.nextval into :new.person_id from dual; 
+select Proj_Person_seq.nextval into :new.person_id from dual; 
 end; 
 /
 
-DROP SEQUENCE S16_Proj_Emps_seq ; 
-create sequence S16_Proj_Emps_seq 
+DROP SEQUENCE Proj_Proj_Emps_seq ; 
+create sequence Proj_Proj_Emps_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER S16_Proj_Emps_PK_trig 
+DROP TRIGGER Proj_Proj_Emps_PK_trig 
 ; 
 
-create or replace trigger S16_Proj_Emps_PK_trig 
-before insert on S16_Proj_Emps
+create or replace trigger Proj_Proj_Emps_PK_trig 
+before insert on Proj_Proj_Emps
 for each row 
 begin 
-select S16_Proj_Emps_seq.nextval into :new.proj_emp_id from dual; 
+select Proj_Proj_Emps_seq.nextval into :new.proj_emp_id from dual; 
 end; 
 /
 
-DROP SEQUENCE S16_Project_seq ; 
-create sequence S16_Project_seq 
+DROP SEQUENCE Proj_Project_seq ; 
+create sequence Proj_Project_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER S16_Project_PK_trig 
+DROP TRIGGER Proj_Project_PK_trig 
 ; 
 
-create or replace trigger S16_Project_PK_trig 
-before insert on S16_Project
+create or replace trigger Proj_Project_PK_trig 
+before insert on Proj_Project
 for each row 
 begin 
-select S16_Project_seq.nextval into :new.project_no from dual; 
+select Proj_Project_seq.nextval into :new.project_no from dual; 
 end; 
 /
 
-DROP INDEX S16_Project_project_no_FK_0 ;
-CREATE INDEX S16_Project_project_no_FK_0 ON S16_History(S16_Project_project_no) ;
-DROP INDEX S16_Person_person_id_FK_1 ;
-CREATE INDEX S16_Person_person_id_FK_1 ON S16_Par_Chil(S16_Person_person_id) ;
-DROP INDEX S16_Person_person_id1_FK_2 ;
-CREATE INDEX S16_Person_person_id1_FK_2 ON S16_Par_Chil(S16_Person_person_id1) ;
-DROP INDEX S16_Department_dept_no_FK_3 ;
-CREATE INDEX S16_Department_dept_no_FK_3 ON S16_Person(S16_Department_dept_no) ;
-DROP INDEX S16_Person_person_id_FK_4 ;
-CREATE INDEX S16_Person_person_id_FK_4 ON S16_Person(S16_Person_person_id) ;
-DROP INDEX S16_Person_person_id1_FK_5 ;
-CREATE INDEX S16_Person_person_id1_FK_5 ON S16_Person(S16_Person_person_id1) ;
-DROP INDEX S16_Person_person_id_FK_6 ;
-CREATE INDEX S16_Person_person_id_FK_6 ON S16_Proj_Emps(S16_Person_person_id) ;
-DROP INDEX S16_Project_project_no_FK_7 ;
-CREATE INDEX S16_Project_project_no_FK_7 ON S16_Proj_Emps(S16_Project_project_no) ;
-DROP INDEX S16_Department_dept_no_FK_8 ;
-CREATE INDEX S16_Department_dept_no_FK_8 ON S16_Project(S16_Department_dept_no) ;
-DROP INDEX S16_Person_person_id_FK_9 ;
-CREATE INDEX S16_Person_person_id_FK_9 ON S16_Project(S16_Person_person_id) ;
-DROP INDEX S16_Project_project_no_FK_10 ;
-CREATE INDEX S16_Project_project_no_FK_10 ON S16_Project(S16_Project_project_no) ;
+DROP INDEX Proj_Project_project_n_FK_0 ;
+CREATE INDEX Proj_Project_project_n_FK_0 ON Proj_History(Proj_Project_project_no) ;
+DROP INDEX Proj_Person_person_id2_FK_1 ;
+CREATE INDEX Proj_Person_person_id2_FK_1 ON Proj_Par_Chil(Proj_Person_person_id2) ;
+DROP INDEX Proj_Person_person_id_FK_2 ;
+CREATE INDEX Proj_Person_person_id_FK_2 ON Proj_Par_Chil(Proj_Person_person_id) ;
+DROP INDEX Proj_Dept_dept_no_FK_3 ;
+CREATE INDEX Proj_Dept_dept_no_FK_3 ON Proj_Person(Proj_Dept_dept_no) ;
+DROP INDEX Proj_Person_person_id2_FK_4 ;
+CREATE INDEX Proj_Person_person_id2_FK_4 ON Proj_Person(Proj_Person_person_id2) ;
+DROP INDEX Proj_Person_person_id_FK_5 ;
+CREATE INDEX Proj_Person_person_id_FK_5 ON Proj_Person(Proj_Person_person_id) ;
+DROP INDEX Proj_Person_person_id_FK_6 ;
+CREATE INDEX Proj_Person_person_id_FK_6 ON Proj_Proj_Emps(Proj_Person_person_id) ;
+DROP INDEX Proj_Project_project_n_FK_7 ;
+CREATE INDEX Proj_Project_project_n_FK_7 ON Proj_Proj_Emps(Proj_Project_project_no) ;
+DROP INDEX Proj_Dept_dept_no_FK_8 ;
+CREATE INDEX Proj_Dept_dept_no_FK_8 ON Proj_Project(Proj_Dept_dept_no) ;
+DROP INDEX Proj_Person_person_id_FK_9 ;
+CREATE INDEX Proj_Person_person_id_FK_9 ON Proj_Project(Proj_Person_person_id) ;
+DROP INDEX Proj_Project_project_n_FK_10 ;
+CREATE INDEX Proj_Project_project_n_FK_10 ON Proj_Project(Proj_Project_project_no) ;

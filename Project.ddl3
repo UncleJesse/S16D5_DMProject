@@ -1,25 +1,25 @@
-DROP SEQUENCE S16_Department_seq ; 
-create sequence S16_Department_seq 
+DROP SEQUENCE Proj_Dept_seq ; 
+create sequence Proj_Dept_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
 
-create or replace trigger S16_Department_PK_trig 
-before insert on S16_Department
+create or replace trigger Proj_Dept_PK_trig 
+before insert on Proj_Dept
 for each row 
 begin 
-select S16_Department_seq.nextval into :new.dept_no from dual; 
+select Proj_Dept_seq.nextval into :new.dept_no from dual; 
 end; 
 /
-alter table S16_Department add created date ; 
-alter table S16_Department add created_by VARCHAR2 (255) ; 
-alter table S16_Department add row_version_number integer ; 
-alter table S16_Department add updated date ; 
-alter table S16_Department add updated_by VARCHAR2 (255) ; 
+alter table Proj_Dept add created date ; 
+alter table Proj_Dept add created_by VARCHAR2 (255) ; 
+alter table Proj_Dept add row_version_number integer ; 
+alter table Proj_Dept add updated date ; 
+alter table Proj_Dept add updated_by VARCHAR2 (255) ; 
 /
-create or replace trigger S16_Department_AUD_trig 
-before insert or update on S16_Department 
+create or replace trigger Proj_Dept_AUD_trig 
+before insert or update on Proj_Dept 
 for each row 
 begin 
   if inserting then 
@@ -38,28 +38,28 @@ begin
 end; 
 /
 
-DROP SEQUENCE S16_History_seq ; 
-create sequence S16_History_seq 
+DROP SEQUENCE Proj_History_seq ; 
+create sequence Proj_History_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
 
-create or replace trigger S16_History_PK_trig 
-before insert on S16_History
+create or replace trigger Proj_History_PK_trig 
+before insert on Proj_History
 for each row 
 begin 
-select S16_History_seq.nextval into :new.history_id from dual; 
+select Proj_History_seq.nextval into :new.history_id from dual; 
 end; 
 /
-alter table S16_History add created date ; 
-alter table S16_History add created_by VARCHAR2 (255) ; 
-alter table S16_History add row_version_number integer ; 
-alter table S16_History add updated date ; 
-alter table S16_History add updated_by VARCHAR2 (255) ; 
+alter table Proj_History add created date ; 
+alter table Proj_History add created_by VARCHAR2 (255) ; 
+alter table Proj_History add row_version_number integer ; 
+alter table Proj_History add updated date ; 
+alter table Proj_History add updated_by VARCHAR2 (255) ; 
 /
-create or replace trigger S16_History_AUD_trig 
-before insert or update on S16_History 
+create or replace trigger Proj_History_AUD_trig 
+before insert or update on Proj_History 
 for each row 
 begin 
   if inserting then 
@@ -78,28 +78,28 @@ begin
 end; 
 /
 
-DROP SEQUENCE S16_Par_Chil_seq ; 
-create sequence S16_Par_Chil_seq 
+DROP SEQUENCE Proj_Par_Chil_seq ; 
+create sequence Proj_Par_Chil_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
 
-create or replace trigger S16_Par_Chil_PK_trig 
-before insert on S16_Par_Chil
+create or replace trigger Proj_Par_Chil_PK_trig 
+before insert on Proj_Par_Chil
 for each row 
 begin 
-select S16_Par_Chil_seq.nextval into :new.parents_children_id from dual; 
+select Proj_Par_Chil_seq.nextval into :new.parents_children_id from dual; 
 end; 
 /
-alter table S16_Par_Chil add created date ; 
-alter table S16_Par_Chil add created_by VARCHAR2 (255) ; 
-alter table S16_Par_Chil add row_version_number integer ; 
-alter table S16_Par_Chil add updated date ; 
-alter table S16_Par_Chil add updated_by VARCHAR2 (255) ; 
+alter table Proj_Par_Chil add created date ; 
+alter table Proj_Par_Chil add created_by VARCHAR2 (255) ; 
+alter table Proj_Par_Chil add row_version_number integer ; 
+alter table Proj_Par_Chil add updated date ; 
+alter table Proj_Par_Chil add updated_by VARCHAR2 (255) ; 
 /
-create or replace trigger S16_Par_Chil_AUD_trig 
-before insert or update on S16_Par_Chil 
+create or replace trigger Proj_Par_Chil_AUD_trig 
+before insert or update on Proj_Par_Chil 
 for each row 
 begin 
   if inserting then 
@@ -118,28 +118,28 @@ begin
 end; 
 /
 
-DROP SEQUENCE S16_Person_seq ; 
-create sequence S16_Person_seq 
+DROP SEQUENCE Proj_Person_seq ; 
+create sequence Proj_Person_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
 
-create or replace trigger S16_Person_PK_trig 
-before insert on S16_Person
+create or replace trigger Proj_Person_PK_trig 
+before insert on Proj_Person
 for each row 
 begin 
-select S16_Person_seq.nextval into :new.person_id from dual; 
+select Proj_Person_seq.nextval into :new.person_id from dual; 
 end; 
 /
-alter table S16_Person add created date ; 
-alter table S16_Person add created_by VARCHAR2 (255) ; 
-alter table S16_Person add row_version_number integer ; 
-alter table S16_Person add updated date ; 
-alter table S16_Person add updated_by VARCHAR2 (255) ; 
+alter table Proj_Person add created date ; 
+alter table Proj_Person add created_by VARCHAR2 (255) ; 
+alter table Proj_Person add row_version_number integer ; 
+alter table Proj_Person add updated date ; 
+alter table Proj_Person add updated_by VARCHAR2 (255) ; 
 /
-create or replace trigger S16_Person_AUD_trig 
-before insert or update on S16_Person 
+create or replace trigger Proj_Person_AUD_trig 
+before insert or update on Proj_Person 
 for each row 
 begin 
   if inserting then 
@@ -158,28 +158,28 @@ begin
 end; 
 /
 
-DROP SEQUENCE S16_Proj_Emps_seq ; 
-create sequence S16_Proj_Emps_seq 
+DROP SEQUENCE Proj_Proj_Emps_seq ; 
+create sequence Proj_Proj_Emps_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
 
-create or replace trigger S16_Proj_Emps_PK_trig 
-before insert on S16_Proj_Emps
+create or replace trigger Proj_Proj_Emps_PK_trig 
+before insert on Proj_Proj_Emps
 for each row 
 begin 
-select S16_Proj_Emps_seq.nextval into :new.proj_emp_id from dual; 
+select Proj_Proj_Emps_seq.nextval into :new.proj_emp_id from dual; 
 end; 
 /
-alter table S16_Proj_Emps add created date ; 
-alter table S16_Proj_Emps add created_by VARCHAR2 (255) ; 
-alter table S16_Proj_Emps add row_version_number integer ; 
-alter table S16_Proj_Emps add updated date ; 
-alter table S16_Proj_Emps add updated_by VARCHAR2 (255) ; 
+alter table Proj_Proj_Emps add created date ; 
+alter table Proj_Proj_Emps add created_by VARCHAR2 (255) ; 
+alter table Proj_Proj_Emps add row_version_number integer ; 
+alter table Proj_Proj_Emps add updated date ; 
+alter table Proj_Proj_Emps add updated_by VARCHAR2 (255) ; 
 /
-create or replace trigger S16_Proj_Emps_AUD_trig 
-before insert or update on S16_Proj_Emps 
+create or replace trigger Proj_Proj_Emps_AUD_trig 
+before insert or update on Proj_Proj_Emps 
 for each row 
 begin 
   if inserting then 
@@ -198,28 +198,28 @@ begin
 end; 
 /
 
-DROP SEQUENCE S16_Project_seq ; 
-create sequence S16_Project_seq 
+DROP SEQUENCE Proj_Project_seq ; 
+create sequence Proj_Project_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
 
-create or replace trigger S16_Project_PK_trig 
-before insert on S16_Project
+create or replace trigger Proj_Project_PK_trig 
+before insert on Proj_Project
 for each row 
 begin 
-select S16_Project_seq.nextval into :new.project_no from dual; 
+select Proj_Project_seq.nextval into :new.project_no from dual; 
 end; 
 /
-alter table S16_Project add created date ; 
-alter table S16_Project add created_by VARCHAR2 (255) ; 
-alter table S16_Project add row_version_number integer ; 
-alter table S16_Project add updated date ; 
-alter table S16_Project add updated_by VARCHAR2 (255) ; 
+alter table Proj_Project add created date ; 
+alter table Proj_Project add created_by VARCHAR2 (255) ; 
+alter table Proj_Project add row_version_number integer ; 
+alter table Proj_Project add updated date ; 
+alter table Proj_Project add updated_by VARCHAR2 (255) ; 
 /
-create or replace trigger S16_Project_AUD_trig 
-before insert or update on S16_Project 
+create or replace trigger Proj_Project_AUD_trig 
+before insert or update on Proj_Project 
 for each row 
 begin 
   if inserting then 
@@ -238,25 +238,25 @@ begin
 end; 
 /
 
-DROP INDEX S16_Project_project_no_FK_0 ;
-CREATE INDEX S16_Project_project_no_FK_0 ON S16_History(S16_Project_project_no) ;
-DROP INDEX S16_Person_person_id_FK_1 ;
-CREATE INDEX S16_Person_person_id_FK_1 ON S16_Par_Chil(S16_Person_person_id) ;
-DROP INDEX S16_Person_person_id1_FK_2 ;
-CREATE INDEX S16_Person_person_id1_FK_2 ON S16_Par_Chil(S16_Person_person_id1) ;
-DROP INDEX S16_Department_dept_no_FK_3 ;
-CREATE INDEX S16_Department_dept_no_FK_3 ON S16_Person(S16_Department_dept_no) ;
-DROP INDEX S16_Person_person_id_FK_4 ;
-CREATE INDEX S16_Person_person_id_FK_4 ON S16_Person(S16_Person_person_id) ;
-DROP INDEX S16_Person_person_id1_FK_5 ;
-CREATE INDEX S16_Person_person_id1_FK_5 ON S16_Person(S16_Person_person_id1) ;
-DROP INDEX S16_Person_person_id_FK_6 ;
-CREATE INDEX S16_Person_person_id_FK_6 ON S16_Proj_Emps(S16_Person_person_id) ;
-DROP INDEX S16_Project_project_no_FK_7 ;
-CREATE INDEX S16_Project_project_no_FK_7 ON S16_Proj_Emps(S16_Project_project_no) ;
-DROP INDEX S16_Department_dept_no_FK_8 ;
-CREATE INDEX S16_Department_dept_no_FK_8 ON S16_Project(S16_Department_dept_no) ;
-DROP INDEX S16_Person_person_id_FK_9 ;
-CREATE INDEX S16_Person_person_id_FK_9 ON S16_Project(S16_Person_person_id) ;
-DROP INDEX S16_Project_project_no_FK_10 ;
-CREATE INDEX S16_Project_project_no_FK_10 ON S16_Project(S16_Project_project_no) ;
+DROP INDEX Proj_Project_project_n_FK_0 ;
+CREATE INDEX Proj_Project_project_n_FK_0 ON Proj_History(Proj_Project_project_no) ;
+DROP INDEX Proj_Person_person_id2_FK_1 ;
+CREATE INDEX Proj_Person_person_id2_FK_1 ON Proj_Par_Chil(Proj_Person_person_id2) ;
+DROP INDEX Proj_Person_person_id_FK_2 ;
+CREATE INDEX Proj_Person_person_id_FK_2 ON Proj_Par_Chil(Proj_Person_person_id) ;
+DROP INDEX Proj_Dept_dept_no_FK_3 ;
+CREATE INDEX Proj_Dept_dept_no_FK_3 ON Proj_Person(Proj_Dept_dept_no) ;
+DROP INDEX Proj_Person_person_id2_FK_4 ;
+CREATE INDEX Proj_Person_person_id2_FK_4 ON Proj_Person(Proj_Person_person_id2) ;
+DROP INDEX Proj_Person_person_id_FK_5 ;
+CREATE INDEX Proj_Person_person_id_FK_5 ON Proj_Person(Proj_Person_person_id) ;
+DROP INDEX Proj_Person_person_id_FK_6 ;
+CREATE INDEX Proj_Person_person_id_FK_6 ON Proj_Proj_Emps(Proj_Person_person_id) ;
+DROP INDEX Proj_Project_project_n_FK_7 ;
+CREATE INDEX Proj_Project_project_n_FK_7 ON Proj_Proj_Emps(Proj_Project_project_no) ;
+DROP INDEX Proj_Dept_dept_no_FK_8 ;
+CREATE INDEX Proj_Dept_dept_no_FK_8 ON Proj_Project(Proj_Dept_dept_no) ;
+DROP INDEX Proj_Person_person_id_FK_9 ;
+CREATE INDEX Proj_Person_person_id_FK_9 ON Proj_Project(Proj_Person_person_id) ;
+DROP INDEX Proj_Project_project_n_FK_10 ;
+CREATE INDEX Proj_Project_project_n_FK_10 ON Proj_Project(Proj_Project_project_no) ;
