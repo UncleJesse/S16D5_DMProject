@@ -123,8 +123,7 @@ SELECT
 	S16_Person_person_id1,
 	employee_id,
 	salary,
-	salary_exception,	
-	S16_Project_project_no
+	salary_exception	
 FROM S16_Person where type = 'Project Employee' ;
 
 create or replace TRIGGER S16_Project_Employee_trigger
@@ -144,8 +143,7 @@ BEGIN
 	S16_Person_person_id1,
 	employee_id,
 	salary,
-	salary_exception,
-	S16_Project_project_no)
+	salary_exception)
 	 VALUES (
 	:NEW.person_id,
 	'Project_Employee',
@@ -159,8 +157,7 @@ BEGIN
 	:NEW.S16_Person_person_id1,
 	:NEW.employee_id,
 	:NEW.salary,
-	:NEW.salary_exception,	
-	:NEW.S16_Project_project_no) ;
+	:NEW.salary_exception) ;
 END;
 /
 
@@ -232,11 +229,11 @@ SELECT
 	zipcode,
 	home_phone,
 	us_citizen,
+	S16_Person_person_id,
 	S16_Person_person_id1,
 	employee_id,
 	salary,
 	salary_exception,
-	S16_Person_person_id,
 	bonus,
 	S16_Department_dept_no
 FROM S16_Person where type = 'Interim Manager' ;
@@ -270,11 +267,11 @@ BEGIN
 	:NEW.zipcode,
 	:NEW.home_phone,
 	:NEW.us_citizen,
+	:NEW.S16_Person_person_id,
 	:NEW.S16_Person_person_id1,
 	:NEW.employee_id,
 	:NEW.salary,
 	:NEW.salary_exception,
-	:NEW.S16_Person_person_id,
 	:NEW.bonus,
 	:NEW.S16_Department_dept_no) ;
 END;
