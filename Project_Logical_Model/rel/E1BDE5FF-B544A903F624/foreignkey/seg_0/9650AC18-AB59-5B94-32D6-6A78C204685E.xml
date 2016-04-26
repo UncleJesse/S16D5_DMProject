@@ -8,7 +8,7 @@
 <referredTableID>BFE81A31-9593-6F40-EFF0-B88E3876BFFC</referredTableID>
 <keyObject>8761A72C-B82A-3092-9ACB-DC7F45DCBFED</keyObject>
 <referredKeyID>8761A72C-B82A-3092-9ACB-DC7F45DCBFED</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

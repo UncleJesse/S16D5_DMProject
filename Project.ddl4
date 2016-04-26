@@ -18,7 +18,7 @@ SELECT
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	is_fired,
 	salary
 FROM Proj_Person where type = 'Previous Employee' ;
@@ -37,7 +37,7 @@ BEGIN
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	is_fired,
 	salary)
 	 VALUES (
@@ -50,7 +50,7 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.Proj_Person_person_id,
-	:NEW.Proj_Person_peson_id1,
+	:NEW.Proj_Person_person_id2,
 	:NEW.is_fired,
 	:NEW.salary) ;
 END;
@@ -67,7 +67,7 @@ SELECT
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception	
@@ -88,7 +88,7 @@ BEGIN
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception)
@@ -102,7 +102,7 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.Proj_Person_person_id,
-	:NEW.Proj_Person_person_id1,
+	:NEW.Proj_Person_person_id2,
 	:NEW.employee_id,
 	:NEW.salary,
 	:NEW.salary_exception) ;
@@ -120,7 +120,7 @@ SELECT
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception	
@@ -140,7 +140,7 @@ BEGIN
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception)
@@ -154,7 +154,7 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.Proj_Person_person_id,
-	:NEW.Proj_Person_person_id1,
+	:NEW.Proj_Person_person_id2,
 	:NEW.employee_id,
 	:NEW.salary,
 	:NEW.salary_exception) ;
@@ -172,12 +172,12 @@ SELECT
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception,
 	bonus,
-	Proj_Department_dept_no
+	Proj_Dept_dept_no
 FROM Proj_Person where type = 'Manager' ;
 
 create or replace TRIGGER Proj_Manager_trigger
@@ -194,12 +194,12 @@ BEGIN
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception,
 	bonus,
-	Proj_Department_dept_no)
+	Proj_Dept_dept_no)
 	 VALUES (
 	:NEW.person_id,
 	'Manager',
@@ -210,12 +210,12 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.Proj_Person_person_id,
-	:NEW.Proj_Person_person_id1,
+	:NEW.Proj_Person_person_id2,
 	:NEW.employee_id,
 	:NEW.salary,
 	:NEW.salary_exception,	
 	:NEW.bonus,
-	:NEW.Proj_Department_dept_no) ;
+	:NEW.Proj_Dept_dept_no) ;
 END;
 /
 
@@ -230,12 +230,12 @@ SELECT
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception,
 	bonus,
-	Proj_Department_dept_no
+	Proj_Dept_dept_no
 FROM Proj_Person where type = 'Interim Manager' ;
 
 create or replace TRIGGER Proj_Interim_Manager_trigger
@@ -252,12 +252,12 @@ BEGIN
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception,	
 	bonus,
-	Proj_Department_dept_no)
+	Proj_Dept_dept_no)
 	 VALUES (
 	:NEW.person_id,
 	'Interim_Manager',
@@ -268,12 +268,12 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.Proj_Person_person_id,
-	:NEW.Proj_Person_person_id1,
+	:NEW.Proj_Person_person_id2,
 	:NEW.employee_id,
 	:NEW.salary,
 	:NEW.salary_exception,
 	:NEW.bonus,
-	:NEW.Proj_Department_dept_no) ;
+	:NEW.Proj_Dept_dept_no) ;
 END;
 /
 
@@ -288,12 +288,12 @@ SELECT
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception,
 	bonus,
-	Proj_Department_dept_no
+	Proj_Dept_dept_no
 FROM Proj_Person where type = 'President' ;
 
 create or replace TRIGGER Proj_President_trigger
@@ -310,12 +310,12 @@ BEGIN
 	home_phone,
 	us_citizen,
 	Proj_Person_person_id,
-	Proj_Person_person_id1,
+	Proj_Person_person_id2,
 	employee_id,
 	salary,
 	salary_exception,
 	bonus,
-	Proj_Department_dept_no)
+	Proj_Dept_dept_no)
 	 VALUES (
 	:NEW.person_id,
 	'President',
@@ -326,12 +326,12 @@ BEGIN
 	:NEW.home_phone,
 	:NEW.us_citizen,
 	:NEW.Proj_Person_person_id,
-	:NEW.Proj_Person_person_id1,
+	:NEW.Proj_Person_person_id2,
 	:NEW.employee_id,
 	:NEW.salary,
 	:NEW.salary_exception,
 	:NEW.bonus,
-	:NEW.Proj_Department_dept_no) ;
+	:NEW.Proj_Dept_dept_no) ;
 END;
 /
 
@@ -343,7 +343,7 @@ SELECT
 	project_active,
 	Proj_Person_person_id,
 	Proj_Project_project_no,
-	Proj_Department_dept_no
+	Proj_Dept_dept_no
 FROM Proj_Project where type = 'Current Project' ;
 
 create or replace TRIGGER Proj_Current_Project_trigger
@@ -357,7 +357,7 @@ BEGIN
 	project_active,
 	Proj_Person_person_id,
 	Proj_Project_project_no,
-	Proj_Department_dept_no)
+	Proj_Dept_dept_no)
 	 VALUES (
 	:NEW.project_no,
 	'Current Project',
@@ -365,7 +365,7 @@ BEGIN
 	:NEW.project_active,
 	:NEW.Proj_Person_person_id,
 	:NEW.Proj_Project_project_no,
-	:NEW.Proj_Department_dept_no) ;
+	:NEW.Proj_Dept_dept_no) ;
 END;
 /
 
@@ -378,7 +378,7 @@ SELECT
 	est_person_hours,
 	Proj_Person_person_id,
 	Proj_Project_project_no,
-	Proj_Department_dept_no
+	Proj_Dept_dept_no
 FROM Proj_Project where type = 'Previous Project' ;
 
 create or replace TRIGGER Proj_Previous_Project_trigger
@@ -393,15 +393,15 @@ BEGIN
 	est_person_hours,
 	Proj_Person_person_id,
 	Proj_Project_project_no,
-	Proj_Department_dept_no)
+	Proj_Dept_dept_no)
 	 VALUES (
 	:NEW.project_no,
 	'Previous Project',
 	:NEW.project_title,
 	:NEW.end_date,
-	:NEW.est_person_hours
+	:NEW.est_person_hours,
 	:NEW.Proj_Person_person_id,
 	:NEW.Proj_Project_project_no,
-	:NEW.Proj_Department_dept_no) ;
+	:NEW.Proj_Dept_dept_no) ;
 END;
 /

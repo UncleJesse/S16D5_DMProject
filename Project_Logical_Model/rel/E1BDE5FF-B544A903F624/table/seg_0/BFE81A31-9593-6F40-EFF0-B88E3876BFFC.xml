@@ -115,6 +115,7 @@
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>BE88950A-FEB5-CA16-F99E-6DB01848A686</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

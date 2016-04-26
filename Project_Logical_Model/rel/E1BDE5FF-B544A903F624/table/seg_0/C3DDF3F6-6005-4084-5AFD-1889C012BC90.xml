@@ -24,6 +24,7 @@
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>86B8355B-2B9D-3C7D-15D3-E054050099A7</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -39,6 +40,7 @@
 <createdTime>2016-04-20 22:55:03 UTC</createdTime>
 <generatorID>47698B22-1EB6-41E9-1B2C-37B96EA94D4B</generatorID>
 <ownerDesignName>Project_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
