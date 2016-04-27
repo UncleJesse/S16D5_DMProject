@@ -1,3 +1,14 @@
+alter table Proj_Par_Chil disable constraint Proj_Par_Chil_Proj_Person_FK;
+alter table Proj_Par_Chil disable constraint Proj_Par_Chil_Proj_Person_FKv2;
+alter table Proj_Person disable constraint Proj_Person_Proj_Dept_FK;
+alter table Proj_Person disable constraint Proj_Person_Proj_Person_FK;
+alter table Proj_Person disable constraint Proj_Person_Proj_Person_FKv2;
+alter table Proj_Project disable constraint Proj_Project_Proj_Dept_FK;
+alter table Proj_Project disable constraint Proj_Project_Proj_Person_FK;
+alter table Proj_Project disable constraint Proj_Project_Proj_Project_FK;
+alter table Proj_Proj_Emps disable constraint Proj_Proj_Emps_Proj_Project_FK;
+alter table Proj_Proj_Emps disable constraint Proj_Proj_Emps_Proj_Person_FK;
+
 truncate table Proj_Dept;
 truncate table Proj_History;
 truncate table Proj_Proj_Emps;
@@ -617,3 +628,14 @@ alter trigger Proj_Project_PK_trig enable;
 alter trigger Proj_History_PK_trig enable;
 alter trigger Proj_Proj_Emps_PK_trig enable;
 alter trigger Proj_Par_Chil_PK_trig enable;
+
+alter table Proj_Par_Chil enable constraint Proj_Par_Chil_Proj_Person_FK;
+alter table Proj_Par_Chil enable constraint Proj_Par_Chil_Proj_Person_FKv2;
+alter table Proj_Person enable constraint Proj_Person_Proj_Dept_FK;
+alter table Proj_Person enable constraint Proj_Person_Proj_Person_FK;
+alter table Proj_Person enable constraint Proj_Person_Proj_Person_FKv2;
+alter table Proj_Project enable constraint Proj_Project_Proj_Dept_FK;
+alter table Proj_Project enable constraint Proj_Project_Proj_Person_FK;
+alter table Proj_Project enable constraint Proj_Project_Proj_Project_FK;
+alter table Proj_Proj_Emps enable constraint Proj_Proj_Emps_Proj_Project_FK;
+alter table Proj_Proj_Emps enable constraint Proj_Proj_Emps_Proj_Person_FK;
